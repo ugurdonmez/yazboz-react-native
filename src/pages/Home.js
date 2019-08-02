@@ -31,6 +31,11 @@ class Home extends Component {
     this.props.navigation.navigate('rulesScreen', { title: 'Oyun Kurallari' })
   }
 
+  modalClose = () => {
+    this.setModalVisible(false);
+    this.props.navigation.navigate('gameScreen', { title: 'Yeni Oyun' })
+  }
+
   render() {
     return (
       <View>

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { COLOR, ThemeContext, getTheme } from 'react-native-material-ui';
 import Container from './ScreenContainer';
 import reducer from './src/store/reducer';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
 const store = createStore(reducer);
 

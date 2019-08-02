@@ -20,7 +20,7 @@ const reducer = (state = initialState, action) => {
         const players = { ...state.players };
         players[action.payload.index] = action.payload.name;
 
-        AsyncStorage.setItem('players', players);
+        // AsyncStorage.setItem('players', players);
 
         return {
             ...state,
@@ -32,7 +32,7 @@ const reducer = (state = initialState, action) => {
         const hands = state.hands;
         hands.push(action.payload.hand);
 
-        AsyncStorage.setItem('hands', hands);
+        // AsyncStorage.setItem('hands', hands);
 
         return {
             ...state,
@@ -45,7 +45,7 @@ const reducer = (state = initialState, action) => {
 
         playersHands[action.payload.index][action.payload.handType]++;
 
-        AsyncStorage.setItem('playerHands', playersHands);
+        // AsyncStorage.setItem('playerHands', playersHands);
 
         return {
             ...state,
@@ -57,7 +57,7 @@ const reducer = (state = initialState, action) => {
         const playedHands = { ...state.playedHands };
         playedHands[action.payload.index]++;
 
-        AsyncStorage.setItem('playedHands', playedHands);
+        // AsyncStorage.setItem('playedHands', playedHands);
         
         return {
             ...state,
