@@ -48,11 +48,9 @@ class NameSelect extends Component {
                             value={this.props.players[3]}
                         />
 
-
                         <Button
                             onPress={this.props.modalClose}
                             title='Kaydet' />
-
                     </View>
                 </View>
             </Modal>
