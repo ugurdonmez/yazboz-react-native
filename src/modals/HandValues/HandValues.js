@@ -169,7 +169,7 @@ class HandValues extends Component {
         let radio_props = this.getAvailableHands().map((p, index) => {
             return {
                 label: p.name,
-                value: index,
+                value: p.id,
             }
         })
 
