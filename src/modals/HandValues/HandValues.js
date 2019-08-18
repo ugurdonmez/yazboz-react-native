@@ -38,7 +38,7 @@ class HandValues extends Component {
     }
 
     componentWillMount = () => {
-        console.log('aaaaaaaaaaaaaa')
+        console.log('HandValues will mount')
     }
 
     static propTypes = {

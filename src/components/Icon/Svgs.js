@@ -8,7 +8,7 @@ export default {
         viewBox: '0 0 50 50',
     },
     Triangle : {
-        svg: <G> <Polygon points="58,58 0,58 29,0 29,0 	"/> </G>,
+        svg: <G><Polygon points="58,58 0,58 29,0 29,0"/></G>,
         viewBox: "0 0 58 58",
     },
     TriangleEmpty: {
