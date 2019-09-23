@@ -141,8 +141,16 @@ class HandValues extends Component {
         this.props.increasePlayedHand(this.state.handId);
         this.props.saveHandValue(hand);
 
+        this.setState({
+            ...this.state,
+            handId: 0,
+            playerScore: [0, 0, 0, 0],
+            canIncrease: [true, true, true, true],
+            canDecrease: [false, false, false, false],
+        });
+
         this.props.modalClose();
-        this.setState(this.initialState);
+        // this.setState(this.initialState);
     }
 
     getAvailableHands = () => {
